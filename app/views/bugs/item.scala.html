@@ -1,0 +1,9 @@
+@(bug: Bug)
+
+<li data-task-id="@bug.id">
+	<h4>@bug.name</h4> @if(bug.dueDate != null) { <time
+		datetime="@bug.dueDate"> @bug.dueDate.format("MMM dd yyyy")</time> }
+
+	@if(bug.assignedTo != null && bug.assignedTo.email != null) { <span
+	class="assignedTo">@bug.assignedTo.email</span> }
+</li>

@@ -18,12 +18,12 @@ public class Project extends Model{
 	public String name;
 	public String folder;
 	@ManyToMany(cascade = CascadeType.REMOVE)
-	public List<User> member = new ArrayList<User>();
+	public List<User> members = new ArrayList<User>();
 	
 	public Project(String name, String folder, User owner) {
 		this.name = name;
 		this.folder = folder;
-		this.member.add(owner);
+		this.members.add(owner);
 	}
 	
 	public static Model.Finder<Long, Project> find = new Model.Finder<>(Long.class, Project.class);

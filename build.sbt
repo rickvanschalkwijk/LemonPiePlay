@@ -1,4 +1,4 @@
-name := "LemonPiePlay"
+name := "lemonpieplay"
 
 version := "1.0-SNAPSHOT"
 

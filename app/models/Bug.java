@@ -16,9 +16,9 @@ public class Bug extends Model{
 	public Long id; 
 	public String name;
 	public boolean isDone;
-	public Date duaDate;
+	public Date dueDate;
 	@ManyToOne
-	public User assigned;
+	public User assignedTo;
 	public String folder;
 	@ManyToOne
 	public Project project;
