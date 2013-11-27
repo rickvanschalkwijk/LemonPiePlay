@@ -17,5 +17,4 @@ public class Application extends Controller {
         		Bug.find.all()
         		));
     }
-
 }
